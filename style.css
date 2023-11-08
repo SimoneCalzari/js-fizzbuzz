@@ -17,6 +17,39 @@ h1 {
 
 #container-boxes {
   width: 70%;
-  margin: 0 auto;
-  background-color: white;
+  margin: 0 auto 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+#container-boxes > div {
+  width: calc((100% - 120px) / 5);
+  aspect-ratio: 1 / 1;
+  font-size: 28px;
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fizz {
+  background-color: #0cd6a1;
+  outline: solid 10px aqua;
+}
+
+.buzz {
+  background-color: #ffd166;
+  box-shadow: 10px 10px red;
+}
+
+.fizz-buzz {
+  background-color: #f0466f;
+  border-radius: 50%;
+}
+
+.normal {
+  background-color: #1389b2;
+  transform: rotate(2deg) ;
 }
